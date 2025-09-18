@@ -18,7 +18,7 @@ export default function RegisterButton() {
     const body = { username, email, password };
 
     try {
-      const res = await fetch(`${import.meta.HOST_LINK}/api/users/register`, {
+      const res = await fetch(`https://contact-manager-op0d.onrender.com/api/users/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

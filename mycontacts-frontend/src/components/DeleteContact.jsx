@@ -12,7 +12,7 @@ export default function DeleteContact({ contact }) {
     if (sure) {
       try {
         const res = await fetch(
-          `${import.meta.HOST_LINK}/api/contacts/${contact._id}`,
+          `https://contact-manager-op0d.onrender.com/api/contacts/${contact._id}`,
           {
             method: "DELETE", 
             headers: {

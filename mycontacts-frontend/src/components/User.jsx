@@ -11,7 +11,7 @@ export default function User() {
   useEffect(() => {
     async function getContacts() {
       try {
-        const res = await fetch(`${import.meta.HOST_LINK}/api/contacts`, {
+        const res = await fetch(`https://contact-manager-op0d.onrender.com/api/contacts`, {
           headers: {
             Authorization: `Bearer ${userAccessToken}`
           }

@@ -21,7 +21,7 @@ export default function CreateContact() {
     const body = { name, email, phone };
 
     try {
-      const res = await fetch(`${import.meta.HOST_LINK}/api/contacts`, {
+      const res = await fetch(`https://contact-manager-op0d.onrender.com/api/contacts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
