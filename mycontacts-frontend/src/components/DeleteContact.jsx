@@ -12,9 +12,9 @@ export default function DeleteContact({ contact }) {
     if (sure) {
       try {
         const res = await fetch(
-          `http://localhost:5001/api/contacts/${contact._id}`,
+          `${import.meta.HOST_LINK}/api/contacts/${contact._id}`,
           {
-            method: "DELETE",
+            method: "DELETE", 
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${userAccessToken}`,

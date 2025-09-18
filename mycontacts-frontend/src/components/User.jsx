@@ -11,7 +11,7 @@ export default function User() {
   useEffect(() => {
     async function getContacts() {
       try {
-        const res = await fetch("http://localhost:5001/api/contacts", {
+        const res = await fetch(`${import.meta.HOST_LINK}/api/contacts`, {
           headers: {
             Authorization: `Bearer ${userAccessToken}`
           }

@@ -21,7 +21,7 @@ export default function UpdateContact({ contact }) {
     const body = { name, email, phone };
 
     try {
-      const res = await fetch(`http://localhost:5001/api/contacts/${contact._id}`, {
+      const res = await fetch(`${import.meta.HOST_LINK}/api/contacts/${contact._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

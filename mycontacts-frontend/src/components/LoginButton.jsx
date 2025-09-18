@@ -22,7 +22,7 @@ export default function LoginButton() {
     const body = { email, password };
 
     try {
-      const res = await fetch("http://localhost:5001/api/users/login", {
+      const res = await fetch(`${import.meta.HOST_LINK}/api/users/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
